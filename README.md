@@ -1,4 +1,6 @@
 # Find for Kindle
+## A much faster way to find and get a book for Kindle
+
 
 Select a book title in any app to find the book for Kindle. 
 
