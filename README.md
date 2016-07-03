@@ -1,8 +1,8 @@
 # Find for Kindle
-## A much faster way to find and get a book for Kindle
 
+A faster way to find and get a book for Kindle
 
-Select a book title in any app to find the book for Kindle. 
+# It's faster
 
 <img src="https://github.com/mortenjust/find-for-kindle/blob/master/ux/demo-compare.mov.gif?raw=true">
 
