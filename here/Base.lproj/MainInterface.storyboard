@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ObA-dk-sSI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Image-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController title="Image" id="ObA-dk-sSI" customClass="ActionViewController" customModule="Find_for_Kindle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePl-Sm-3Hr">
+                                <rect key="frame" x="0.0" y="20" width="320" height="508"/>
+                                <color key="backgroundColor" red="0.13725490196078433" green="0.18431372549019609" blue="0.24705882352941178" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUH-gn-ZIm">
+                                <rect key="frame" x="120" y="22" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="9q9-FA-lal"/>
+                                    <constraint firstAttribute="height" constant="30" id="ues-g7-DZC"/>
+                                </constraints>
+                                <state key="normal" title="Done" backgroundImage="donebg">
+                                    <color key="titleColor" red="0.99195677042007446" green="0.99622899293899536" blue="0.99192315340042114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.13725490200000001" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="ObA-dk-sSI" eventType="touchUpInside" id="K7p-4d-9ET"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.18431372549019609" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ePl-Sm-3Hr" firstAttribute="top" secondItem="iUH-gn-ZIm" secondAttribute="bottom" constant="-32" id="7Nm-Zr-3ae"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="ePl-Sm-3Hr" secondAttribute="bottom" id="Gzn-uT-PUz"/>
+                            <constraint firstAttribute="trailing" secondItem="ePl-Sm-3Hr" secondAttribute="trailing" id="Jxf-Zk-JlO"/>
+                            <constraint firstItem="ePl-Sm-3Hr" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="brl-Wr-GJ2"/>
+                            <constraint firstItem="iUH-gn-ZIm" firstAttribute="centerX" secondItem="zMn-AG-sqS" secondAttribute="centerX" id="dCJ-4T-XQU"/>
+                            <constraint firstItem="ePl-Sm-3Hr" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="dm7-eE-7ZF"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="doneButton" destination="iUH-gn-ZIm" id="d6f-p9-Cpb"/>
+                        <outlet property="view" destination="zMn-AG-sqS" id="Qma-de-2ek"/>
+                        <outlet property="webView" destination="ePl-Sm-3Hr" id="3LE-xt-267"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="-124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="donebg" width="610" height="253"/>
+    </resources>
+</document>
